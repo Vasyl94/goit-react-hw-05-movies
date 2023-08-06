@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const HomePage = () => {
-  const [film, setFilm] = useState([]);
+  const [ setFilm] = useState([]);
 
   const location = useLocation();
 
@@ -13,7 +13,7 @@ const HomePage = () => {
       .then(response => response.json())
       .then(data => setFilm(data.results))
       .catch(error => console.log(error));
-  }, [film]);
+  }, );
 
   return (
     <>
