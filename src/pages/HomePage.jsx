@@ -13,7 +13,7 @@ const HomePage = () => {
       .then(response => response.json())
       .then(data => setFilm(data.results))
       .catch(error => console.log(error));
-  }, [film]);
+  } );
 
   return (
     <>
