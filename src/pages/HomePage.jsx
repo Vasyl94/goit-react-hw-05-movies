@@ -19,7 +19,7 @@ const HomePage = () => {
     <>
       <h2>Trending today</h2>
       <ul>
-        {map(movie => (
+        {film.map(movie => (
           <Link
             key={movie.id}
             to={`/movies/${movie.id}`}
